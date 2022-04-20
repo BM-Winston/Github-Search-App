@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from "@angular/common/http";
 import { AppComponent } from './app.component';
-import { FormModule } from "@angular/forms";
+// import { FormModule } from "@angular/forms";
 
 
 @NgModule({
@@ -16,7 +16,7 @@ import { FormModule } from "@angular/forms";
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormModule
+    // FormModule
   ],
   providers: [],
   bootstrap: [AppComponent]
