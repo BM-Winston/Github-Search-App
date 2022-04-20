@@ -17,7 +17,15 @@ export class GsearchService {
         headers:{
           Authorization: 'token ${environment.access_token}'
         }
-      }).subscribe
+      }).subscribe({
+        next:()=>{
+
+        },
+        error:()=>{
+
+        },
+        complete:()=>{}
+      })
     })
   }
 }
