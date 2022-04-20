@@ -70,6 +70,8 @@ SOFTWARE.
 
 ## Authors Info
 
+## Winston Musasia
+
 
 
 [Go Back to the top](#Github Search App)
