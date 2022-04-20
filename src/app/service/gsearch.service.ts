@@ -35,6 +35,6 @@ export class GsearchService {
         }
       })
     })
-    return promise;
+    
   }
 }
