@@ -15,13 +15,22 @@ export class GitsearchComponent implements OnInit {
   ngOnInit(): void {
   }
   findUser(ghubname: string){
-    this._gsearchService.findUser(ghubname).then(()=>{
-      this.currentUser = this._gsearchService.user;
+    if (ghubname == "") {
+      alert("Enter name")
+      
+    }
+    else{
+      this._gsearchService.findUser(ghubname).then(
+        () => {
+          this.currentUser = this._gsearchService.user;
+        },
+        () => {
+          alert('Github user not found');
+        }
+      );
+    
 
-    },()=>{
-      alert("Github user not found")
-
-    });
+    }
     
   }
 
